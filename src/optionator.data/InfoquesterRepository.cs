@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Net.Http;
+using System.Text.Json;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
 
 using optionator.core;
 
@@ -17,47 +17,45 @@ public class InfoquesterRepository
     private readonly string _filePath;
     private readonly HttpClient _httpClient;
 
-    public InfoquesterRepository(string githubUser, string repositoryName, string branchName, string filePath)
+    public InfoquesterRepository(string githubUser, string repositoryName, string branchName, string filePath, HttpClient httpClient)
     {
         _githubUser = githubUser;
         _repositoryName = repositoryName;
         _branchName = branchName;
         _filePath = filePath;
-        _httpClient = new HttpClient();
+        _httpClient = httpClient;
     }
 
-        public async Task<InfoquesterRepositoryResponse> GetInfoquestersAsync()
+
+    public async Task<InfoquesterRepositoryResponse> GetInfoquestersAsync()
+    {
+        InfoquesterRepositoryResponse infoquesterRepositoryResponse
+            = new InfoquesterRepositoryResponse();
+
+        var url = $"https://raw.githubusercontent.com/{_githubUser}/{_repositoryName}/{_branchName}/{_filePath}";
+        try
         {
-            InfoquesterRepositoryResponse infoquesterRepositoryResponse 
-                = new InfoquesterRepositoryResponse();
-
-            var url = $"https://raw.githubusercontent.com/{_githubUser}/{_repositoryName}/{_branchName}/{_filePath}";
-            try
+            var response = await _httpClient.GetAsync(url);
+            var jsonContent = await response.Content.ReadAsStringAsync();
+            var infoquesters = JsonSerializer.Deserialize<List<Infoquester>>(jsonContent);
+            if (infoquesters is not null)
             {
-                var response = await _httpClient.GetAsync(url);
-                var contentStream = await response.Content.ReadAsStreamAsync();
-                using var streamReader = new StreamReader(contentStream);
-                using var jsonReader = new JsonTextReader(streamReader);
-                var serializer = new JsonSerializer();
-                var infoquesters = serializer.Deserialize<List<Infoquester>>(jsonReader);
-                if(infoquesters is not null)
-                {
-                    infoquesterRepositoryResponse.Infoquesters = infoquesters;
-                }
+                infoquesterRepositoryResponse.Infoquesters = infoquesters;
             }
-            catch (HttpRequestException ex)
-            {
-                infoquesterRepositoryResponse.Message = ex.Message;
-            }
-            catch (JsonException ex)
-            {
-                infoquesterRepositoryResponse.Message = ex.Message;
-            }
-            catch (Exception ex)
-            {
-                infoquesterRepositoryResponse.Message = ex.Message;
-            }
-
-            return infoquesterRepositoryResponse;
         }
+        catch (HttpRequestException ex)
+        {
+            infoquesterRepositoryResponse.Message = ex.Message;
+        }
+        catch (JsonException ex)
+        {
+            infoquesterRepositoryResponse.Message = ex.Message;
+        }
+        catch (Exception ex)
+        {
+            infoquesterRepositoryResponse.Message = ex.Message;
+        }
+
+        return infoquesterRepositoryResponse;
+    }
 }

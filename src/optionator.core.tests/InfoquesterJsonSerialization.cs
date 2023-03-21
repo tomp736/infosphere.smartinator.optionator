@@ -1,5 +1,3 @@
-using Newtonsoft.Json;
-
 using optionator.core;
 
 namespace optionator.core.tests;
