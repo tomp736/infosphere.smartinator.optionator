@@ -1,0 +1,25 @@
+FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build-env
+WORKDIR /App
+
+# Copy csprojs
+COPY optionator.core/optionator.core.csproj ./optionator.core/optionator.core.csproj
+COPY optionator.data/optionator.data.csproj ./optionator.data/optionator.data.csproj
+COPY optionator.webapi/optionator.webapi.csproj ./optionator.webapi/optionator.webapi.csproj
+
+# Restore as distinct layers
+RUN dotnet restore optionator.core
+RUN dotnet restore optionator.data
+RUN dotnet restore optionator.webapi
+
+COPY optionator.core ./optionator.core
+COPY optionator.data ./optionator.data
+COPY optionator.webapi ./optionator.webapi
+
+# Build and publish a release
+RUN dotnet publish optionator.webapi -c Release -o out
+
+# Build runtime image
+FROM mcr.microsoft.com/dotnet/aspnet:7.0
+WORKDIR /App
+COPY --from=build-env /App/out .
+ENTRYPOINT ["dotnet", "optionator.webapi.dll"]

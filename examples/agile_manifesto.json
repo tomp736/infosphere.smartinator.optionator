@@ -15,7 +15,7 @@
             "b",
             "d"
         ],
-        "incorrect_answers": {
+        "explanations": {
             "a": "Waterfall is a traditional project management methodology that follows a sequential, phased approach, and is not part of Agile methodologies.",
             "c": "Spiral is an iterative software development model, but it is not considered an Agile methodology.",
             "f": "Six Sigma is a methodology used for process improvement and quality control, but it is not part of Agile methodologies.",
@@ -43,7 +43,7 @@
             "f",
             "g"
         ],
-        "incorrect_answers": {
+        "explanations": {
             "d": "Big design up front is a traditional project management practice that involves creating a comprehensive design before starting development, and is not an Agile practice.",
             "h": "Waterfall is a traditional project management methodology that follows a sequential, phased approach, and is not part of Agile practices."
         }
@@ -66,7 +66,7 @@
             "e",
             "f"
         ],
-        "incorrect_answers": {
+        "explanations": {
             "b": "This contradicts one of the Agile Manifesto's principles, which emphasizes conversation over documentation.",
             "c": "This contradicts one of the Agile Manifesto's principles, which emphasizes customer satisfaction over team satisfaction.",
             "g": "This contradicts one of the Agile Manifesto's principles, which emphasizes adaptability over planning and control.",
@@ -91,7 +91,7 @@
             "e",
             "f"
         ],
-        "incorrect_answers": {
+        "explanations": {
             "c": "Agile testing involves testing all aspects of the software, not just its functionality. Functional testing is not sufficient to ensure the quality of the software.",
             "d": "Regression testing is an important aspect of Agile testing, but it is not the only type of testing that is done.",
             "g": "Pair testing is not a common Agile testing practice.",
@@ -113,7 +113,7 @@
         "correct_answers": [
             "c"
         ],
-        "incorrect_answers": {
+        "explanations": {
             "a": "A successful Agile team is self-organizing and determines the best way to accomplish its work.",
             "b": "A successful Agile team is cross-functional and has all the skills necessary to deliver a product increment.",
             "d": "A successful Agile team is collaborative and works together to deliver a product increment.",
@@ -139,7 +139,7 @@
             "b",
             "d"
         ],
-        "incorrect_answers": {
+        "explanations": {
             "a": "Over-engineering the software can lead to additional technical debt.",
             "c": "Ignoring technical debt can make it harder and more expensive to pay off later in the project.",
             "e": "Adding more technical debt to balance it out is not a sustainable solution and can lead to even more problems.",
@@ -163,7 +163,7 @@
         "correct_answers": [
             "c"
         ],
-        "incorrect_answers": {
+        "explanations": {
             "a": "Agile development is an iterative process that involves frequent cycles of planning, execution, and feedback.",
             "b": "Agile development is adaptive, meaning that it is designed to respond to changes in requirements and priorities.",
             "d": "Agile development is customer-focused and places a high priority on delivering value to the customer.",
@@ -187,7 +187,7 @@
         "correct_answers": [
             "d"
         ],
-        "incorrect_answers": {
+        "explanations": {
             "a": "Creating a detailed software design document before any coding begins does not align with the Agile Manifesto's emphasis on working software over documentation.",
             "b": "While writing test cases is important in Agile development, it does not take precedence over delivering working software.",
             "c": "Performing code reviews is important for ensuring the quality of the code, but it does not take precedence over delivering working software.",
@@ -210,7 +210,7 @@
         "correct_answers": [
             "e"
         ],
-        "incorrect_answers": {
+        "explanations": {
             "a": "Creating a detailed project plan is important in Agile development, but it should not take precedence over responding to change.",
             "b": "Adhering strictly to a project plan can be detrimental in Agile development, where requirements and priorities can change frequently.",
             "c": "Holding daily stand-up meetings is important for ensuring communication and collaboration, but it does not take precedence over responding to change.",
@@ -233,7 +233,7 @@
             "c",
             "d"
         ],
-        "incorrect_answers": {
+        "explanations": {
             "a": "In a SAFe environment, testing and quality assurance are typically shared responsibilities among team members.",
             "b": "Ensuring quality is a team responsibility in SAFe, and individual team members should not be solely responsible for it.",
             "e": "Deferring quality-related activities to the QA team can lead to a lack of ownership and accountability among team members.",
@@ -254,7 +254,7 @@
             "b",
             "c"
         ],
-        "incorrect_answers": {
+        "explanations": {
             "a": "In SAFe, process improvement is a team responsibility, and individual team members should not be solely responsible for it.",
             "d": "While the Scrum Master may facilitate process improvement activities, it is the team's responsibility to identify and implement process improvements.",
             "e": "Assuming responsibility for all aspects of continuous improvement can lead to a lack of collaboration and ownership among team members.",
@@ -274,7 +274,7 @@
         "correct_answers": [
             "c"
         ],
-        "incorrect_answers": {
+        "explanations": {
             "a": "In Agile development, problem-solving is typically a team responsibility, and individual team members should not be solely responsible for it.",
             "b": "Assuming responsibility for all problem-solving activities can lead to a lack of collaboration and ownership among team members.",
             "d": "While the Scrum Master may facilitate problem-solving activities, it is the team's responsibility to identify and solve problems.",
@@ -295,7 +295,7 @@
         "correct_answers": [
             "c"
         ],
-        "incorrect_answers": {
+        "explanations": {
             "a": "Deferring problem-solving activities can lead to a lack of ownership and accountability among team members.",
             "b": "A 'trial and error' approach to problem-solving may not be efficient or effective in an Agile development environment.",
             "d": "Ignoring problems can lead to quality problems and can hinder the team's ability to deliver value to customers.",
@@ -316,7 +316,7 @@
         "correct_answers": [
             "c"
         ],
-        "incorrect_answers": {
+        "explanations": {
             "a": "Ignoring interpersonal conflicts can lead to a toxic work environment and can hinder the team's ability to deliver value to customers.",
             "b": "Assuming responsibility for creating a positive work culture can lead to a lack of ownership and accountability among team members.",
             "d": "While the Scrum Master may facilitate efforts to create a positive work culture, it is the responsibility of all team members to contribute to a positive work environment.",
@@ -337,7 +337,7 @@
         "correct_answers": [
             "c"
         ],
-        "incorrect_answers": {
+        "explanations": {
             "a": "Blaming others for problems and conflicts can lead to a toxic work environment and can hinder the team's ability to deliver value to customers.",
             "b": "Taking a 'lone wolf' approach to problem-solving can lead to a lack of collaboration and ownership among team members.",
             "d": "While the Scrum Master may facilitate problem-solving activities, it is the responsibility of all team members to contribute to effective interpersonal behavior.",
@@ -359,7 +359,7 @@
             "c",
             "f"
         ],
-        "incorrect_answers": {
+        "explanations": {
             "a": "Asking for help when encountering problems or obstacles is a sign of effective teamwork, and does not indicate that someone is working as a lone wolf.",
             "b": "Collaborating with other team members to solve problems and complete tasks is a sign of effective teamwork, and does not indicate that someone is working as a lone wolf.",
             "d": "Regularly attending and actively participating in team meetings and ceremonies is a sign of effective teamwork, and does not indicate that someone is working as a lone wolf.",
@@ -379,7 +379,7 @@
         "correct_answers": [
             "c"
         ],
-        "incorrect_answers": {
+        "explanations": {
             "a": "Working as a lone wolf may lead to completing tasks faster, but may not necessarily be more efficient in the long run.",
             "b": "Working as a lone wolf can hinder collaboration and communication with other team members, leading to negative impacts on the team and project outcomes.",
             "d": "Working as a lone wolf may increase one's sense of ownership and accountability, but can also lead to a lack of collaboration and accountability among team members.",
@@ -400,7 +400,7 @@
         "correct_answers": [
             "d"
         ],
-        "incorrect_answers": {
+        "explanations": {
             "a": "Blaming team members is not aligned with Agile principles and can lead to a toxic work environment.",
             "b": "Notifying the Scrum Master and the product owner is important, but taking ownership of the issue and working with the team to diagnose and fix the problem is the first step.",
             "c": "Ignoring critical issues in production is not aligned with Agile principles and can lead to negative impacts on customers and stakeholders.",
@@ -421,7 +421,7 @@
         "correct_answers": [
             "d"
         ],
-        "incorrect_answers": {
+        "explanations": {
             "a": "Refusing to provide feedback or suggestions can hinder effective collaboration and can lead to negative impacts on team morale and outcomes.",
             "b": "Taking a 'my way or the highway' approach to problem-solving can lead to a lack of collaboration and ownership among team members.",
             "c": "While the Scrum Master may facilitate communication and collaboration, it is the responsibility of all team members to contribute to effective teamwork.",
@@ -442,7 +442,7 @@
         "correct_answers": [
             "d"
         ],
-        "incorrect_answers": {
+        "explanations": {
             "a": "Focusing solely on completing tasks and meeting deadlines can lead to a lack of focus on delivering value to customers.",
             "b": "While the product owner may facilitate value delivery, it is the responsibility of all team members to contribute to delivering value to customers.",
             "c": "Taking a 'set it and forget it' approach to product development can lead to negative impacts on customers and stakeholders.",
@@ -463,7 +463,7 @@
         "correct_answers": [
             "d"
         ],
-        "incorrect_answers": {
+        "explanations": {
             "a": "Blaming team members can lead to a toxic work environment and can hinder effective collaboration among team members.",
             "b": "Ignoring the delay can lead to negative impacts on customers and stakeholders, and can cause the team to fall behind in their commitments.",
             "c": "Working extra hours and sacrificing quality can lead to a lack of focus on delivering value to customers, and can cause burnout and decreased morale among team members.",
@@ -484,7 +484,7 @@
         "correct_answers": [
             "d"
         ],
-        "incorrect_answers": {
+        "explanations": {
             "a": "Assuming that the requirements are clear enough can lead to a lack of quality and customer satisfaction, and can cause the team to deliver the wrong features.",
             "b": "Blaming team members for not understanding the requirements can lead to a toxic work environment and can hinder effective collaboration among team members.",
             "c": "While it may be necessary to escalate the issue to the product owner, it is important to first collaborate with the team to clarify the requirements and ensure that everyone has a clear understanding of what needs to be done.",
@@ -506,7 +506,7 @@
             "c",
             "d"
         ],
-        "incorrect_answers": {
+        "explanations": {
             "a": "Continuing to add new features and functionality without addressing technical debt can lead to negative impacts on customers and stakeholders, and can cause the team to fall behind in their commitments.",
             "b": "Blaming team members for technical debt can lead to a toxic work environment and can hinder effective collaboration among team members.",
             "e": "While the Scrum Master or project manager may facilitate decision-making, it is the responsibility of all team members to contribute to finding a solution.",
@@ -526,7 +526,7 @@
         "correct_answers": [
             "d"
         ],
-        "incorrect_answers": {
+        "explanations": {
             "a": "Assuming that your previous work style and communication preferences will work for this new team can lead to misunderstandings and conflicts, and can hinder effective collaboration.",
             "b": "Working independently and avoiding interactions with the team can lead to a lack of collaboration and can hinder effective communication, which can negatively impact the quality of the work produced by the team.",
             "c": "Communicating only via email or instant messaging can lead to misunderstandings and can hinder effective collaboration, as face-to-face interactions are important for building trust and fostering effective communication.",
@@ -547,7 +547,7 @@
         "correct_answers": [
             "d"
         ],
-        "incorrect_answers": {
+        "explanations": {
             "a": "Blaming team members for their behavior can lead to a toxic work environment and can hinder effective collaboration among team members.",
             "b": "Ignoring the interruptions can lead to a lack of collaboration and can hinder effective communication, which can negatively impact the quality of the work produced by the team.",
             "c": "Scheduling more frequent meetings can lead to a lack of productivity and can negatively impact the team's ability to deliver value to customers.",
@@ -569,7 +569,7 @@
             "c",
             "e"
         ],
-        "incorrect_answers": {
+        "explanations": {
             "a": "Focusing only on individual tasks and ignoring the team's progress can hinder effective collaboration and communication, which can negatively impact the quality of the work produced by the team.",
             "b": "Not being open to new ideas and suggestions from team members can lead to a lack of collaboration and can hinder effective communication, which can negatively impact the quality of the work produced by the team.",
             "d": "Not communicating effectively with team members or stakeholders can lead to misunderstandings and conflicts, and can hinder effective collaboration and communication.",
@@ -590,7 +590,7 @@
             "c",
             "d"
         ],
-        "incorrect_answers": {
+        "explanations": {
             "a": "Assuming that the new team member will adapt quickly to Agile methodologies without any guidance can lead to misunderstandings and conflicts, and can hinder effective collaboration and communication among team members.",
             "b": "Providing the new team member with a detailed training on Agile methodologies before they start working can lead to information overload and may not be effective in integrating the new team member into the Agile environment.",
             "e": "While the Scrum Master or project manager may facilitate decision-making, it is the responsibility of all team members to contribute to effective collaboration and communication.",
@@ -612,7 +612,7 @@
         "correct_answers": [
             "c"
         ],
-        "incorrect_answers": {
+        "explanations": {
             "a": "Focusing only on individual tasks and not participating in team meetings can hinder effective collaboration and communication, which can negatively impact the quality of the work produced by the team.",
             "b": "Not communicating effectively with team members or stakeholders can lead to misunderstandings and conflicts, and can hinder effective collaboration and communication.",
             "d": "Ignoring changes in requirements and priorities can lead to delays and may negatively impact the success of the project.",
@@ -633,7 +633,7 @@
         "correct_answers": [
             "c"
         ],
-        "incorrect_answers": {
+        "explanations": {
             "a": "Expecting the new team member to learn the Agile methodology on their own can lead to misunderstandings and conflicts, and can hinder effective collaboration and communication among team members.",
             "b": "Excluding the new team member from daily standup meetings and other team activities until they are fully familiar with the Agile methodology can lead to misunderstandings and conflicts, and can hinder effective collaboration and communication among team members.",
             "d": "Ignoring the new team member's lack of familiarity with Agile methodologies and insisting that they contribute immediately can lead to misunderstandings and conflicts, and can hinder effective collaboration and communication among team members.",
@@ -654,7 +654,7 @@
         "correct_answers": [
             "b"
         ],
-        "incorrect_answers": {
+        "explanations": {
             "a": "The principle 'working software over comprehensive documentation' emphasizes the importance of prioritizing working software over extensive documentation. While it is important to have working software, this principle is not directly related to the scenario in which the team agrees to consider a new feature during a sprint.",
             "c": "The principle 'customer collaboration over contract negotiation' emphasizes the importance of collaborating with the customer to understand their needs and priorities. While it is important to collaborate with the customer, this principle is not directly related to the scenario in which the team agrees to consider a new feature during a sprint.",
             "d": "The principle 'individuals and interactions over processes and tools' emphasizes the importance of valuing people and collaboration over processes and tools. While it is important to value individuals and interactions, this principle is not directly related to the scenario in which the team agrees to consider a new feature during a sprint.",
@@ -674,7 +674,7 @@
         "correct_answers": [
             "e"
         ],
-        "incorrect_answers": {
+        "explanations": {
             "a": "The principle 'working software over comprehensive documentation' emphasizes the importance of prioritizing working software over extensive documentation. While it is important to have working software, this principle is not directly related to the scenario in which the customer provides feedback that the team's work does not meet their expectations.",
             "b": "The principle 'responding to change over following a plan' emphasizes the importance of being adaptable and responsive to changes in requirements or priorities. While it is important to respond to change, this principle is not directly related to the scenario in which the customer provides feedback that the team's work does not meet their expectations.",
             "c": "The principle 'customer collaboration over contract negotiation' emphasizes the importance of collaborating with the customer to understand their needs and priorities. While it is important to collaborate with the customer, this principle is not directly related to the scenario in which the customer provides feedback that the team's work does not meet their expectations.",
@@ -695,7 +695,7 @@
         "correct_answers": [
             "d"
         ],
-        "incorrect_answers": {
+        "explanations": {
             "a": "The principle 'working software over comprehensive documentation' emphasizes the importance of prioritizing working software over extensive documentation. While it is important to have working software, this principle is not directly related to the scenario in which the team member suggests using a new tool to help streamline their work processes.",
             "b": "The principle 'responding to change over following a plan' emphasizes the importance of being adaptable and responsive to changes in requirements or priorities. While it is important to respond to change, this principle is not directly related to the scenario in which the team member suggests using a new tool to help streamline their work processes.",
             "c": "The principle 'customer collaboration over contract negotiation' emphasizes the importance of collaborating with the customer to understand their needs and priorities. While it is important to collaborate with the customer, this principle is not directly related to the scenario in which the team member suggests using a new tool to help streamline their work processes.",
@@ -715,7 +715,7 @@
         "correct_answers": [
             "c"
         ],
-        "incorrect_answers": {
+        "explanations": {
             "a": "The principle 'working software over comprehensive documentation' emphasizes the importance of prioritizing working software over extensive documentation. While it is important to have working software, this principle is not directly related to the scenario in which the team member suggests prioritizing a user story that will provide the most value to the customer.",
             "b": "The principle 'responding to change over following a plan' emphasizes the importance of being adaptable and responsive to changes in requirements or priorities. While it is important to respond to change, this principle is not directly related to the scenario in which the team member suggests prioritizing a user story that will provide the most value to the customer.",
             "c": "The principle 'customer collaboration over contract negotiation' emphasizes the importance of collaborating with the customer to understand their needs and priorities. In this scenario, the team member's suggestion and the team's subsequent decision to prioritize a user story that will provide the most value to the customer demonstrates the principle of customer collaboration over contract negotiation, as the team is focused on delivering the most value to the customer rather than just meeting contractual obligations.",
@@ -736,7 +736,7 @@
             "b",
             "c"
         ],
-        "incorrect_answers": {
+        "explanations": {
             "a": "The principle 'working software over comprehensive documentation' emphasizes the importance of prioritizing working software over extensive documentation. While it is important to have working software, this principle is not directly related to the scenario in which the team agrees to make changes to improve the user experience.",
             "b": "The principle 'responding to change over following a plan' emphasizes the importance of being adaptable and responsive to changes in requirements or priorities. In this scenario, the team's willingness to make changes to improve the user experience demonstrates the principle of responding to change over following a plan, as the team is focused on delivering a better product even if it requires changes to their original plan.",
             "c": "The principle 'customer collaboration over contract negotiation' emphasizes the importance of collaborating with the customer to understand their needs and priorities. In this scenario, the team's willingness to make changes to improve the user experience demonstrates the principle of customer collaboration over contract negotiation, as the team is focused on delivering a better product that meets the customer's needs rather than just meeting contractual obligations.",
@@ -756,7 +756,7 @@
         "correct_answers": [
             "d"
         ],
-        "incorrect_answers": {
+        "explanations": {
             "a": "The principle 'working software over comprehensive documentation' emphasizes the importance of prioritizing working software over extensive documentation. While it is important to have working software, this principle is not directly related to the scenario in which the team discusses a dependency on another team.",
             "b": "The principle 'responding to change over following a plan' emphasizes the importance of being adaptable and responsive to changes in requirements or priorities. While it is important to respond to change, this principle is not directly related to the scenario in which the team discusses a dependency on another team.",
             "c": "The principle 'customer collaboration over contract negotiation' emphasizes the importance of collaborating with the customer to understand their needs and priorities. While it is important to collaborate with the customer, this principle is not directly related to the scenario in which the team discusses a dependency on another team.",
@@ -776,7 +776,7 @@
         "correct_answers": [
             "e"
         ],
-        "incorrect_answers": {
+        "explanations": {
             "a": "The principle 'working software over comprehensive documentation' emphasizes the importance of prioritizing working software over extensive documentation. While breaking down user stories into smaller pieces may require additional documentation, this is not a violation of this principle.",
             "b": "The principle 'responding to change over following a plan' emphasizes the importance of being adaptable and responsive to changes in requirements or priorities. While breaking down user stories into smaller pieces may be a response to a recurring issue, this is not a violation of this principle.",
             "c": "The principle 'customer collaboration over contract negotiation' emphasizes the importance of collaborating with the customer to understand their needs and priorities. While breaking down user stories into smaller pieces may help the team better understand and meet the customer's needs, this is not a violation of this principle.",
@@ -797,7 +797,7 @@
             "c",
             "d"
         ],
-        "incorrect_answers": {
+        "explanations": {
             "a": "Removing the user story from the sprint backlog may be necessary if it is too complex or uncertain to complete within the sprint, but it is not the best course of action in this situation as the team has already started working on it and may have made some progress. Removing the user story could also cause disruption to the sprint plan and the team's commitment to delivering value to the customer.",
             "b": "Continuing to work on the user story as planned, even if it means sacrificing quality or working overtime, is not a sustainable or effective approach to addressing the complexity and uncertainty of the user story. It could also compromise the team's ability to deliver value to the customer in a timely manner and cause burnout or other negative consequences.",
             "c": "Collaborating with the customer and other stakeholders to reassess the user story's priority and value, and determining whether it is worth continuing to work on within the sprint, is the best course of action in this situation. This aligns with the Agile principle of customer collaboration over contract negotiation and the practice of inspecting and adapting to changes in requirements or priorities.",
@@ -818,7 +818,7 @@
             "c",
             "e"
         ],
-        "incorrect_answers": {
+        "explanations": {
             "a": "Creating a detailed plan for the entire project and strictly adhering to it throughout the project is not aligned with Agile principles and practices, as it goes against the principle of responding to change over following a plan and the practice of inspecting and adapting to changes in requirements or priorities.",
             "b": "Assigning individual team members to specific tasks based on their expertise and experience and holding them accountable for their assigned tasks is not aligned with Agile principles and practices, as it goes against the principle of individuals and interactions over processes and tools and the practice of cross-functional collaboration.",
             "c": "Focusing on delivering working software as early as possible and iterating on the system as feedback is received from the client and end-users is the best course of action in this situation, as it aligns with the Agile principle of delivering working software frequently and the practice of iterative development and continuous improvement.",
@@ -839,7 +839,7 @@
             "c",
             "e"
         ],
-        "incorrect_answers": {
+        "explanations": {
             "a": "Using a traditional waterfall approach to software development with detailed requirements gathering, design, and testing phases and strict change control is not aligned with Agile principles and practices, as it goes against the principle of responding to change over following a plan and the practice of iterative development and continuous improvement.",
             "b": "Assigning individual team members to specific tasks based on their expertise and experience and holding them accountable for their assigned tasks is not aligned with Agile principles and practices, as it goes against the principle of cross-functional collaboration and the practice of self-organizing teams.",
             "c": "Focusing on delivering a minimum viable product (MVP) as early as possible and iterating on the system as feedback is received from the client and end-users is the best course of action in this situation, as it aligns with the Agile principle of delivering working software frequently and the practice of iterative development and continuous improvement.",
@@ -860,7 +860,7 @@
             "c",
             "e"
         ],
-        "incorrect_answers": {
+        "explanations": {
             "a": "Assigning individual team members to specific tasks based on their expertise and experience and holding them accountable for their assigned tasks is not aligned with Agile principles and practices, as it goes against the principle of cross-functional collaboration and the practice of self-organizing teams.",
             "b": "Creating a detailed project plan with specific timelines, milestones, and deliverables and following it strictly throughout the project is not aligned with Agile principles and practices, as it goes against the principle of responding to change over following a plan and the practice of iterative development and continuous improvement.",
             "c": "Focusing on delivering working software as early as possible and iterating on the system as feedback is received from the client and end-users is the best course of action in this situation, as it aligns with the Agile principle of delivering working software frequently and the practice of iterative development and continuous improvement.",
@@ -881,7 +881,7 @@
             "b",
             "e"
         ],
-        "incorrect_answers": {
+        "explanations": {
             "a": "Assigning the junior developers to less critical tasks that require less skill and experience and focusing on the senior developers to deliver the core features of the system is not aligned with Agile principles and practices, as it goes against the principle of individuals and interactions over processes and tools and the practice of cross-functional collaboration and self-organizing teams.",
             "b": "Providing the junior developers with additional training and mentoring and pairing them with senior developers to work on more complex tasks is the best course of action in this situation, as it aligns with the Agile principle of continuous learning and the practice of pairing and collaboration to improve code quality and knowledge sharing.",
             "c": "Increasing the level of oversight and control over the junior developers' work and requiring them to follow strict guidelines and procedures to ensure quality is not aligned with Agile principles and practices, as it goes against the principle of trust and empowerment and the practice of self-organizing teams and continuous improvement.",
@@ -903,7 +903,7 @@
             "c",
             "e"
         ],
-        "incorrect_answers": {
+        "explanations": {
             "a": "Assigning individual team members to specific tasks based on their expertise and experience and holding them accountable for their assigned tasks is not aligned with Agile principles and practices, as it goes against the principle of cross-functional collaboration and the practice of self-organizing teams.",
             "b": "Creating a detailed project plan with specific timelines, milestones, and deliverables and following it strictly throughout the project is not aligned with Agile principles and practices, as it goes against the principle of responding to change over following a plan and the practice of iterative development and continuous improvement.",
             "c": "Focusing on delivering working software as early as possible and iterating on the system as feedback is received from the client and end-users is the best course of action in this situation, as it aligns with the Agile principle of delivering working software frequently and the practice of iterative development and continuous improvement.",
@@ -924,7 +924,7 @@
             "c",
             "e"
         ],
-        "incorrect_answers": {
+        "explanations": {
             "a": "Assigning individual team members to specific tasks based on their expertise and experience and holding them accountable for their assigned tasks is not aligned with Agile principles and practices, as it goes against the principle of cross-functional collaboration and the practice of self-organizing teams.",
             "b": "Creating a detailed project plan with specific timelines, milestones, and deliverables and following it strictly throughout the project is not aligned with Agile principles and practices, as it goes against the principle of responding to change over following a plan and the practice of iterative development and continuous improvement.",
             "c": "Focusing on delivering working software as early as possible and iterating on the system as feedback is received from the client and end-users is the best course of action in this situation, as it aligns with the Agile principle of delivering working software frequently and the practice of iterative development and continuous improvement.",

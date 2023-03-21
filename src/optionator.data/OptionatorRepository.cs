@@ -9,7 +9,7 @@ using optionator.core;
 
 namespace optionator.data;
 
-public class InfoquesterRepository
+public class OptionatorRepository
 {
     private readonly string _githubUser;
     private readonly string _repositoryName;
@@ -17,7 +17,7 @@ public class InfoquesterRepository
     private readonly string _filePath;
     private readonly HttpClient _httpClient;
 
-    public InfoquesterRepository(string githubUser, string repositoryName, string branchName, string filePath, HttpClient httpClient)
+    public OptionatorRepository(string githubUser, string repositoryName, string branchName, string filePath, HttpClient httpClient)
     {
         _githubUser = githubUser;
         _repositoryName = repositoryName;
@@ -26,36 +26,35 @@ public class InfoquesterRepository
         _httpClient = httpClient;
     }
 
-
-    public async Task<InfoquesterRepositoryResponse> GetInfoquestersAsync()
+    public async Task<OptionatorRepositoryResponse> GetOptionatorsAsync()
     {
-        InfoquesterRepositoryResponse infoquesterRepositoryResponse
-            = new InfoquesterRepositoryResponse();
+        OptionatorRepositoryResponse optionatorRepositoryResponse
+            = new OptionatorRepositoryResponse();
 
         var url = $"https://raw.githubusercontent.com/{_githubUser}/{_repositoryName}/{_branchName}/{_filePath}";
         try
         {
             var response = await _httpClient.GetAsync(url);
             var jsonContent = await response.Content.ReadAsStringAsync();
-            var infoquesters = JsonSerializer.Deserialize<List<Infoquester>>(jsonContent);
-            if (infoquesters is not null)
+            var optionators = JsonSerializer.Deserialize<List<Optionator>>(jsonContent);
+            if (optionators is not null)
             {
-                infoquesterRepositoryResponse.Infoquesters = infoquesters;
+                optionatorRepositoryResponse.Optionators = optionators;
             }
         }
         catch (HttpRequestException ex)
         {
-            infoquesterRepositoryResponse.Message = ex.Message;
+            optionatorRepositoryResponse.Message = ex.Message;
         }
         catch (JsonException ex)
         {
-            infoquesterRepositoryResponse.Message = ex.Message;
+            optionatorRepositoryResponse.Message = ex.Message;
         }
         catch (Exception ex)
         {
-            infoquesterRepositoryResponse.Message = ex.Message;
+            optionatorRepositoryResponse.Message = ex.Message;
         }
 
-        return infoquesterRepositoryResponse;
+        return optionatorRepositoryResponse;
     }
 }

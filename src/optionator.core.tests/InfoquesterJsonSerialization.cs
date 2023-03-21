@@ -3,7 +3,7 @@ using optionator.core;
 namespace optionator.core.tests;
 
 [TestClass]
-public class InfoquesterTests
+public class OptionatorTests
 {   
     string _json = @"{
     ""Question"": ""What is the capital of France?"",
@@ -16,7 +16,7 @@ public class InfoquesterTests
     ""CorrectAnswers"": [
     ""a""
     ],
-    ""IncorrectAnswers"": {
+    ""Explanations"": {
     ""b"": ""London is the capital of the UK."",
     ""c"": ""New York is a city in the USA."",
     ""d"": ""Tokyo is the capital of Japan.""
@@ -27,7 +27,7 @@ public class InfoquesterTests
     public void TestSerialization()
     {
         // Arrange
-        var infoquester = new Infoquester
+        var optionator = new Optionator
         {
             Question = "What is the capital of France?",
             Options = new Dictionary<char, string>
@@ -38,7 +38,7 @@ public class InfoquesterTests
                     { 'd', "Tokyo" }
                 },
             CorrectAnswers = new List<char> { 'a' },
-            IncorrectAnswers = new Dictionary<char, string>
+            Explanations = new Dictionary<char, string>
                 {
                     { 'b', "London is the capital of the UK." },
                     { 'c', "New York is a city in the USA." },
@@ -48,7 +48,7 @@ public class InfoquesterTests
 
         // Act
         var expectedJson = JsonConvert.SerializeObject(JsonConvert.DeserializeObject(_json), Formatting.Indented);
-        var serializedJson = JsonConvert.SerializeObject(infoquester, Formatting.Indented);
+        var serializedJson = JsonConvert.SerializeObject(optionator, Formatting.Indented);
 
         // Assert
         Assert.AreEqual(expectedJson, serializedJson);
@@ -58,7 +58,7 @@ public class InfoquesterTests
     public void TestDeserialization()
     {
         // Arrange
-        var expectedInfoquester = new Infoquester
+        var expectedOptionator = new Optionator
         {
             Question = "What is the capital of France?",
             Options = new Dictionary<char, string>
@@ -69,7 +69,7 @@ public class InfoquesterTests
                     { 'd', "Tokyo" }
                 },
             CorrectAnswers = new List<char> { 'a' },
-            IncorrectAnswers = new Dictionary<char, string>
+            Explanations = new Dictionary<char, string>
                 {
                     { 'b', "London is the capital of the UK." },
                     { 'c', "New York is a city in the USA." },
@@ -78,12 +78,12 @@ public class InfoquesterTests
         };
 
         // Act
-        var deserializedInfoquester = JsonConvert.DeserializeObject<Infoquester>(_json);
+        var deserializedOptionator = JsonConvert.DeserializeObject<Optionator>(_json);
 
         // Assert
-        Assert.AreEqual(expectedInfoquester.Question, deserializedInfoquester.Question);
-        CollectionAssert.AreEqual(expectedInfoquester.Options, deserializedInfoquester.Options);
-        CollectionAssert.AreEqual(expectedInfoquester.CorrectAnswers, deserializedInfoquester.CorrectAnswers);
-        CollectionAssert.AreEqual(expectedInfoquester.IncorrectAnswers, deserializedInfoquester.IncorrectAnswers);
+        Assert.AreEqual(expectedOptionator.Question, deserializedOptionator.Question);
+        CollectionAssert.AreEqual(expectedOptionator.Options, deserializedOptionator.Options);
+        CollectionAssert.AreEqual(expectedOptionator.CorrectAnswers, deserializedOptionator.CorrectAnswers);
+        CollectionAssert.AreEqual(expectedOptionator.Explanations, deserializedOptionator.Explanations);
     }
 }

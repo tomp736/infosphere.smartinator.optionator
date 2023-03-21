@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+
+  backend:
+    build:
+      context: ./src
+      dockerfile: dockerfile.webapi
+    ports:
+      - "5000:80"
+
+  frontend:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+    volumes:
+      - ./src/optionator.frontend.vue:/usr/share/nginx/html

@@ -2,16 +2,29 @@ using optionator.data;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: MyAllowSpecificOrigins,
+                      policy =>
+                      {
+                          policy.WithOrigins("*");
+                      });
+});
+
+// Add optionator services to the container.
 builder.Services.AddSingleton<HttpClient>();
-builder.Services.AddSingleton<InfoquesterRepository>(
-    new InfoquesterRepository(
-        "tomp736", 
-        "infosphere.smartinator.optionator", 
-        "main", 
+builder.Services.AddSingleton<OptionatorRepository>(
+    new OptionatorRepository(
+        "tomp736",
+        "infosphere.smartinator.optionator",
+        "main",
         "examples/agile_manifesto.json",
         new HttpClient()));
-        
+builder.Services.AddSingleton<OptionatorDataProvider>();
+
+// Add services to the container.
+
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -24,6 +37,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors(MyAllowSpecificOrigins);
 
 app.UseHttpsRedirection();
 
