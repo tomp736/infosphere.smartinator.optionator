@@ -1,5 +1,5 @@
 {
-    "Repositories": [
+    "GitHubRepositoryConfigs": [
         {
             "githubUser": "tomp736",
             "repositoryName": "infosphere.smartinator.optionator",

@@ -14,7 +14,7 @@ builder.Services.AddCors(options =>
 
 builder.Configuration.AddJsonFile("repositories.json");
 
-IConfigurationSection repositoryConfigsSection = builder.Configuration.GetSection("Repositories");
+IConfigurationSection repositoryConfigsSection = builder.Configuration.GetSection("GitHubRepositoryConfigs");
 List<OptionatorGitHubRepositoryConfig> repositoryConfigs = 
     repositoryConfigsSection.Get<List<OptionatorGitHubRepositoryConfig>>() ?? new List<OptionatorGitHubRepositoryConfig>(); // TODO
 
