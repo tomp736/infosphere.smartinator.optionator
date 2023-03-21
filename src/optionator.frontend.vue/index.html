@@ -14,12 +14,13 @@
         <input type="radio" v-else v-model="answer" :value="key">
         {{ option }}
       </div>
-      <button type="button" @click="submitAnswer">Submit Answer</button>
+      <button type="button" @click="onShowResult">Show Result</button>
+      <button type="button" @click="nextOptionator">Next Optionator</button>
     </form>
     <div v-if="showResult">
       <p v-if="isCorrect">Correct!</p>
       <p v-else>Incorrect.</p>
-      <ul v-if="!isCorrect">
+      <ul>
         <li v-for="(explanation, key) in questionData.explanations" :key="key" v-if="answers[key]">{{ explanation }}</li>
       </ul>
     </div>
@@ -39,17 +40,24 @@
         this.getQuestionData();
       },
       methods: {
+        nextOptionator() {
+            this.getQuestionData();
+        },
         getQuestionData() {
           fetch('http://localhost:5000/optionator/random')
             .then(response => response.json())
             .then(data => {
               this.questionData = data;
+              this.answer = null
+              this.answers = {}
+              this.allowMultiple = true,
+              this.showResult = false
             })
             .catch(error => {
               console.log(error);
             });
         },
-        submitAnswer() {
+        onShowResult() {
             this.showResult = true;
         },
       },

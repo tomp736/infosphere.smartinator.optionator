@@ -1,0 +1,124 @@
+[
+    {
+        "question": "Which of the following steps are included in the Plan Do Check Act (PDCA) problem solving framework?",
+        "options": {
+            "a": "Establish a reward system",
+            "b": "Plan",
+            "c": "Do",
+            "d": "Sell",
+            "e": "Implement"
+        },
+        "correct_answers": [
+            "b",
+            "c",
+            "e"
+        ],
+        "explanations": {
+            "a": "Establishing a reward system is not a step in the PDCA problem solving framework.",
+            "b": "Plan: Identify the problem, collect data, and analyze the data to identify the root cause.",
+            "c": "Do: Develop and implement a solution.",
+            "d": "Selling is not a step in the PDCA problem solving framework.",
+            "e": "Implement: Monitor and evaluate the results of the solution and take corrective action if necessary."
+        }
+    },
+    {
+        "question": "Which of the following is the correct order of the phases in the DMAIC problem solving methodology?",
+        "options": {
+            "a": "Define, Analyze, Improve, Control, Measure",
+            "b": "Analyze, Define, Control, Measure, Improve",
+            "c": "Define, Measure, Analyze, Improve, Control",
+            "d": "Measure, Control, Define, Analyze, Improve",
+            "e": "Improve, Analyze, Control, Measure, Define"
+        },
+        "correct_answers": [
+            "c"
+        ],
+        "explanations": {
+            "a": "The order of phases is incorrect. DMAIC stands for Define, Measure, Analyze, Improve, and Control.",
+            "b": "The order of phases is incorrect. DMAIC stands for Define, Measure, Analyze, Improve, and Control.",
+            "c": "Correct. The DMAIC problem solving methodology consists of five phases: Define, Measure, Analyze, Improve, and Control.",
+            "d": "The order of phases is incorrect. DMAIC stands for Define, Measure, Analyze, Improve, and Control.",
+            "e": "The order of phases is incorrect. DMAIC stands for Define, Measure, Analyze, Improve, and Control."
+        }
+    },
+    {
+        "question": "Which of the following is NOT one of the 7 basic quality tools?",
+        "options": {
+            "a": "Histogram",
+            "b": "Scatter diagram",
+            "c": "Control chart",
+            "d": "Pareto chart",
+            "e": "Force field analysis"
+        },
+        "correct_answers": [
+            "e"
+        ],
+        "explanations": {
+            "a": "A histogram is one of the 7 basic quality tools. It is a chart that shows the frequency distribution of a set of data.",
+            "b": "A scatter diagram is one of the 7 basic quality tools. It is used to show the relationship between two variables.",
+            "c": "A control chart is one of the 7 basic quality tools. It is used to monitor a process over time to determine if it is stable and within control limits.",
+            "d": "A Pareto chart is one of the 7 basic quality tools. It is a bar graph that shows the relative frequency or size of problems in descending order of importance.",
+            "e": "Force field analysis is not one of the 7 basic quality tools. It is a technique used in organizational development to analyze the forces that drive and restrain a proposed change."
+        }
+    },
+    {
+        "question": "Which of the following is an example of a Lean tool used to identify and eliminate waste?",
+        "options": {
+            "a": "Kaizen",
+            "b": "Ishikawa diagram",
+            "c": "Gemba walk",
+            "d": "5S",
+            "e": "Fishbone diagram"
+        },
+        "correct_answers": [
+            "d"
+        ],
+        "explanations": {
+            "a": "Kaizen is a continuous improvement approach that involves all employees in the organization. It is not specifically used to identify and eliminate waste.",
+            "b": "An Ishikawa diagram, also known as a fishbone or cause-and-effect diagram, is used to identify the root causes of a problem, but not necessarily to identify and eliminate waste.",
+            "c": "A Gemba walk is a Lean technique where a manager or supervisor goes to the workplace to observe and identify waste, but it is not a specific tool for waste identification.",
+            "d": "5S is a Lean tool used to identify and eliminate waste. It stands for Sort, Set in Order, Shine, Standardize, and Sustain.",
+            "e": "A fishbone diagram is not specifically used to identify and eliminate waste, but to identify the root causes of a problem."
+        }
+    },
+    {
+        "question": "Which of the following is NOT one of the 5 principles of Six Sigma?",
+        "options": {
+            "a": "Focus on the customer",
+            "b": "Continuous improvement",
+            "c": "Defect prevention",
+            "d": "Statistical thinking",
+            "e": "Just-in-time manufacturing"
+        },
+        "correct_answers": [
+            "e"
+        ],
+        "explanations": {
+            "a": "Focusing on the customer is one of the core principles of Six Sigma, as the ultimate goal of any improvement project is to satisfy the customer's needs.",
+            "b": "Continuous improvement is one of the core principles of Six Sigma, as the goal is to constantly improve processes and eliminate defects.",
+            "c": "Defect prevention is one of the core principles of Six Sigma, as the goal is to prevent defects from occurring in the first place rather than fixing them after the fact.",
+            "d": "Statistical thinking is one of the core principles of Six Sigma, as data analysis and statistical tools are used to measure, analyze, and improve processes.",
+            "e": "Just-in-time manufacturing is not one of the core principles of Six Sigma, although it is a Lean manufacturing concept that emphasizes the importance of producing goods only when they are needed, reducing inventory, and eliminating waste."
+        }
+    },
+    {
+        "question": "Which of the following is a key component of the 8D problem solving methodology?",
+        "options": {
+            "a": "Fishbone diagram",
+            "b": "Control chart",
+            "c": "Brainstorming",
+            "d": "Failure mode and effects analysis (FMEA)",
+            "e": "Gemba walk"
+        },
+        "correct_answers": [
+            "c"
+        ],
+        "explanations": {
+            "a": "A fishbone diagram, also known as an Ishikawa or cause-and-effect diagram, is a tool used to identify the root causes of a problem, but it is not a key component of the 8D problem solving methodology.",
+            "b": "A control chart is a tool used in statistical process control to monitor a process over time, but it is not a key component of the 8D problem solving methodology.",
+            "c": "Brainstorming is a key component of the 8D problem solving methodology, as it is used to generate ideas and potential solutions to a problem.",
+            "d": "Failure mode and effects analysis (FMEA) is a tool used to identify and prioritize potential failures in a process, but it is not a key component of the 8D problem solving methodology.",
+            "e": "A Gemba walk is a Lean technique where a manager or supervisor goes to the workplace to observe and identify waste, but it is not a key component of the 8D problem solving methodology."
+        }
+    }
+]

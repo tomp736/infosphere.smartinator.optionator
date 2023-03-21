@@ -340,6 +340,7 @@
         "explanations": {
             "a": "Blaming others for problems and conflicts can lead to a toxic work environment and can hinder the team's ability to deliver value to customers.",
             "b": "Taking a 'lone wolf' approach to problem-solving can lead to a lack of collaboration and ownership among team members.",
+            "c": "In an Agile team, frequent and transparent communication is necessary to ensure that everyone is on the same page and that the team is making progress towards the project's goals. When team members feel comfortable sharing their thoughts and ideas, it can lead to more effective problem-solving and collaboration, as well as greater accountability and trust within the team. Promoting open communication also helps to identify and address issues early on, reducing the risk of miscommunication or misunderstandings that can lead to delays or mistakes. By creating a culture of open communication, Agile teams can work more efficiently and effectively towards achieving their goals.",
             "d": "While the Scrum Master may facilitate problem-solving activities, it is the responsibility of all team members to contribute to effective interpersonal behavior.",
             "e": "Engaging in office politics and playing favorites can lead to a toxic work environment and can hinder the team's ability to deliver value to customers.",
             "f": "Ignoring feedback and suggestions from other team members can lead to a lack of collaboration and trust among team members."
@@ -446,6 +447,7 @@
             "a": "Focusing solely on completing tasks and meeting deadlines can lead to a lack of focus on delivering value to customers.",
             "b": "While the product owner may facilitate value delivery, it is the responsibility of all team members to contribute to delivering value to customers.",
             "c": "Taking a 'set it and forget it' approach to product development can lead to negative impacts on customers and stakeholders.",
+            "d": "Collaborating with the product owner and stakeholders to understand their needs and priorities involves working closely with them to gain a deep understanding of what they require from a product or project, and what outcomes they hope to achieve. This may involve regular meetings, brainstorming sessions, and ongoing communication to ensure that everyone is aligned and has a clear understanding of what is expected. By working collaboratively with stakeholders, team members can ensure that their work is aligned with overall business goals and that the end product meets the needs of all involved parties. This approach can lead to a more successful project outcome and improved stakeholder satisfaction.",
             "e": "Ignoring customer feedback and suggestions can lead to a lack of focus on delivering value to customers.",
             "f": "Assuming that value delivery is someone else's responsibility can lead to a lack of ownership and accountability among team members."
         }
@@ -551,6 +553,7 @@
             "a": "Blaming team members for their behavior can lead to a toxic work environment and can hinder effective collaboration among team members.",
             "b": "Ignoring the interruptions can lead to a lack of collaboration and can hinder effective communication, which can negatively impact the quality of the work produced by the team.",
             "c": "Scheduling more frequent meetings can lead to a lack of productivity and can negatively impact the team's ability to deliver value to customers.",
+            "d": "By encouraging participation and managing interruptions, all team members can have a voice, which can lead to better collaboration and more effective problem-solving. Summarizing key points and keeping the meeting on track also helps to ensure that everyone is on the same page and that important information is not missed.",
             "e": "While the Scrum Master or project manager may facilitate decision-making, it is the responsibility of all team members to contribute to effective collaboration and communication.",
             "f": "Refusing to acknowledge the issue can lead to a lack of ownership and accountability among team members."
         }
@@ -899,7 +902,6 @@
             "e": "Emphasize cross-functional collaboration and open communication, and regularly review progress and priorities with all stakeholders, including the client and end-users."
         },
         "correct_answers": [
-            "b",
             "c",
             "e"
         ],
