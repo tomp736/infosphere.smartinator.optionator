@@ -1,0 +1,34 @@
+{
+    "Repositories": [
+        {
+            "githubUser": "tomp736",
+            "repositoryName": "infosphere.smartinator.optionator",
+            "branchName": "main",
+            "filePath": "examples/acceptance-test-driven-development.json"
+        },
+        {
+            "githubUser": "tomp736",
+            "repositoryName": "infosphere.smartinator.optionator",
+            "branchName": "main",
+            "filePath": "examples/agile-manifesto.json"
+        },
+        {
+            "githubUser": "tomp736",
+            "repositoryName": "infosphere.smartinator.optionator",
+            "branchName": "main",
+            "filePath": "examples/lean-principles.json"
+        },
+        {
+            "githubUser": "tomp736",
+            "repositoryName": "infosphere.smartinator.optionator",
+            "branchName": "main",
+            "filePath": "examples/plan-do-check-act.json"
+        },
+        {
+            "githubUser": "tomp736",
+            "repositoryName": "infosphere.smartinator.optionator",
+            "branchName": "main",
+            "filePath": "examples/software-design-patterns.json"
+        }
+    ]
+}

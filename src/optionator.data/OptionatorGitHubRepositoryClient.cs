@@ -9,32 +9,23 @@ using optionator.core;
 
 namespace optionator.data;
 
-public class OptionatorRepository
+public class OptionatorGitHubRepositoryClient
 {
-    private readonly string _githubUser;
-    private readonly string _repositoryName;
-    private readonly string _branchName;
-    private readonly string _filePath;
     private readonly HttpClient _httpClient;
 
-    public OptionatorRepository(string githubUser, string repositoryName, string branchName, string filePath, HttpClient httpClient)
+    public OptionatorGitHubRepositoryClient(HttpClient httpClient)
     {
-        _githubUser = githubUser;
-        _repositoryName = repositoryName;
-        _branchName = branchName;
-        _filePath = filePath;
         _httpClient = httpClient;
     }
 
-    public async Task<OptionatorRepositoryResponse> GetOptionatorsAsync()
+    public async Task<OptionatorGitHubRepositoryResponse> GetOptionatorsAsync(OptionatorGitHubRepositoryConfig optionatorGitHubRepositoryConfig)
     {
-        OptionatorRepositoryResponse optionatorRepositoryResponse
-            = new OptionatorRepositoryResponse();
+        OptionatorGitHubRepositoryResponse optionatorRepositoryResponse
+            = new OptionatorGitHubRepositoryResponse();
 
-        var url = $"https://raw.githubusercontent.com/{_githubUser}/{_repositoryName}/{_branchName}/{_filePath}";
         try
         {
-            var response = await _httpClient.GetAsync(url);
+            var response = await _httpClient.GetAsync(optionatorGitHubRepositoryConfig.Url);
             var jsonContent = await response.Content.ReadAsStringAsync();
             var optionators = JsonSerializer.Deserialize<List<Optionator>>(jsonContent);
             if (optionators is not null)

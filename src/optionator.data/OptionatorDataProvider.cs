@@ -11,18 +11,20 @@ namespace optionator.data;
 
 public class OptionatorDataProvider
 {
-    private readonly List<OptionatorRepository> _optionatorRepositories;
+    private readonly OptionatorGitHubRepositoryClient _optionatorGitHubRepositoryClient;
+    private readonly List<OptionatorGitHubRepositoryConfig> _optionatorGitHubRepositoryConfig;
     private readonly Lazy<List<Optionator>> _optionatorsLazy;
 
-    public OptionatorDataProvider(List<OptionatorRepository> optionatorRepositories)
+    public OptionatorDataProvider(OptionatorGitHubRepositoryClient optionatorGitHubRepositoryClient, List<OptionatorGitHubRepositoryConfig> optionatorGitHubRepositoryConfig)
     {
-        _optionatorRepositories = optionatorRepositories;
+        _optionatorGitHubRepositoryClient = optionatorGitHubRepositoryClient;
+        _optionatorGitHubRepositoryConfig = optionatorGitHubRepositoryConfig;
         _optionatorsLazy = new Lazy<List<Optionator>>(() => LoadOptionatorsAsync().Result);
     }
 
     private async Task<List<Optionator>> LoadOptionatorsAsync()
     {
-        var tasks = _optionatorRepositories.Select(or => or.GetOptionatorsAsync());
+        var tasks = _optionatorGitHubRepositoryConfig.Select(config => _optionatorGitHubRepositoryClient.GetOptionatorsAsync(config));
         var results = await Task.WhenAll(tasks);
         var allOptionators = results.SelectMany(r => r.Optionators).ToList();
         return allOptionators;

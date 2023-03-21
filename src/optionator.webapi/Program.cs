@@ -12,16 +12,18 @@ builder.Services.AddCors(options =>
                       });
 });
 
-List<OptionatorRepository> _optionatorRepositories = new List<OptionatorRepository>();
-_optionatorRepositories.Add(new OptionatorRepository("tomp736", "infosphere.smartinator.optionator", "main", "examples/acceptance-test-driven-development.json", new HttpClient()));
-_optionatorRepositories.Add(new OptionatorRepository("tomp736", "infosphere.smartinator.optionator", "main", "examples/agile-manifesto.json", new HttpClient()));
-_optionatorRepositories.Add(new OptionatorRepository("tomp736", "infosphere.smartinator.optionator", "main", "examples/lean-principles.json", new HttpClient()));
-_optionatorRepositories.Add(new OptionatorRepository("tomp736", "infosphere.smartinator.optionator", "main", "examples/plan-do-check-act.json", new HttpClient()));
-_optionatorRepositories.Add(new OptionatorRepository("tomp736", "infosphere.smartinator.optionator", "main", "examples/software-design-patterns.json", new HttpClient()));
+builder.Configuration.AddJsonFile("repositories.json");
+
+IConfigurationSection repositoryConfigsSection = builder.Configuration.GetSection("Repositories");
+List<OptionatorGitHubRepositoryConfig> repositoryConfigs = 
+    repositoryConfigsSection.Get<List<OptionatorGitHubRepositoryConfig>>() ?? new List<OptionatorGitHubRepositoryConfig>(); // TODO
+
+// Register the repository configs as a singleton
+builder.Services.AddSingleton<List<OptionatorGitHubRepositoryConfig>>(repositoryConfigs);
 
 // Add optionator services to the container.
 builder.Services.AddSingleton<HttpClient>();
-builder.Services.AddSingleton<List<OptionatorRepository>>(_optionatorRepositories);
+builder.Services.AddSingleton<OptionatorGitHubRepositoryClient>();
 builder.Services.AddSingleton<OptionatorDataProvider>();
 
 // Add services to the container.
